@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Unauthorized Access Detected</title>
+<style>
+/* Compiled CSS from the provided mapping */
+@keyframes wiggle {
+  0% {
+    transform: scale(1);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+body {
+  padding: 10px 25px;
+  font-family: monospace;
+  font-size: 17px;
+  background-color: #1300a0; /* Blue Screen of Death background color */
+  color: #fff;
+}
+
+.bsod-container {
+  animation: wiggle 4s infinite;
+}
+
+.rickroll-link {
+  cursor: pointer;
+  text-decoration: underline;
+  display: none; /* Hide initially */
+}
+</style>
+</head>
+<body>
+<div class="bsod-container">
+  <p>Oh great, another nosy person trying to access stuff they're not supposed to. 🙄</p>
+  <p>Listen up, buddy! This page is off-limits!</p>
+  <p>Can't you read? It clearly says "Unauthorized Access Detected"! That means scram! 🚫</p>
+  <p>If you keep this up, I'll have to call the internet police! 👮‍♂️</p>
+  <p>Technical information (not that you'll understand it):</p>
+  <p>*** STOP: 0x0000005B (0x0000000000000000, 0x0000000000000000, 0x0000000000000000, 0x0000000000000000)</p>
+  <p>Now, get lost and don't come back! 😡</p>
+  <p class="rickroll-link" onclick="openRickroll()">All right, you asked for it!</p>
+</div>
+
+<script>
+// Show the paragraph after 10 seconds
+setTimeout(function() {
+  var rickrollLink = document.querySelector('.rickroll-link');
+  rickrollLink.style.display = 'block';
+  // Call the function after 1 second
+  setTimeout(function() {
+    openRickroll();
+  }, 1000); // 1 second in milliseconds
+}, 10000); // 10 seconds in milliseconds
+
+function openRickroll() {
+  window.open('https://www.youtube.com/watch?v=dQw4w9WgXcQ', '_blank');
+}
+</script>
+
+</body>
+</html>
