@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Blue Screen of Death</title>
+<style>
+/* Compiled CSS from the provided mapping */
+@keyframes wiggle {
+  0% {
+    transform: scale(1);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+body {
+  padding: 10px 25px;
+  font-family: monospace;
+  font-size: 17px;
+  background-color: #1300a0; /* Blue Screen of Death background color */
+  color: #fff;
+}
+
+.bsod-container {
+  animation: wiggle 4s infinite;
+}
+</style>
+</head>
+<body>
+<div class="bsod-container">
+  <p>Alert: Your system has detected unauthorized access from an unknown source.</p>
+  <p>This intrusion appears to be related to activities reminiscent of the infamous Breaking Bad series.</p>
+  <p>If you suspect your computer has been compromised, take immediate action to secure your system and data.</p>
+  <p>Source: Walter White</p>
+  <p>Technical information:</p>
+  <p>*** STOP: 0x0000000A (0x0000000000000000, 0x0000000000000000, 0x0000000000000000, 0x0000000000000000)</p>
+  <p>Physical memory dump initiated for analysis and mitigation. Please contact your system administrator for further assistance.</p>
+</div>
+
+<script>
+// After 10 seconds, set background to Walter White GIF and change title
+setTimeout(function() {
+  document.body.style.backgroundImage = "url('https://media.tenor.com/YFH8r7l0IX0AAAAM/walter-white-falling.gif')";
+  document.title = "Walter White Virus has taken over.";
+}, 10000); // 10 seconds in milliseconds
+</script>
+
+</body>
+</html>
