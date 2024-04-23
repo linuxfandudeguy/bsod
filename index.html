@@ -19,6 +19,7 @@ body {
   padding: 10px 25px;
   font-family: monospace;
   font-size: 17px;
+  background-color: #1300a0; /* Blue Screen of Death background color */
   color: #fff;
 }
 
@@ -27,7 +28,7 @@ body {
 }
 </style>
 </head>
-<body style="background-color: <?php echo isset($_GET['background']) ? '#' . $_GET['background'] : '#1300a0'; ?>">
+<body>
 <div class="bsod-container">
   <p>A problem has been detected and your computer has been shut down to prevent damage to your system.</p>
   <p>If this is the first time you've seen this Stop error screen, restart your computer. If this screen appears again, follow these steps:</p>
@@ -39,5 +40,6 @@ body {
   <p>Physical memory dump complete.</p>
   <p>Contact your system administrator or technical support group for further assistance.</p>
 </div>
+
 </body>
 </html>
